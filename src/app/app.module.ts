@@ -11,7 +11,7 @@ import { AppComponent, DialogContentComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    MaterialModule.forRoot(),
+    MaterialModule,
     BrowserAnimationsModule
   ],
   declarations: [AppComponent, DialogContentComponent],

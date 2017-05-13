@@ -1,5 +1,4 @@
-@import '~@angular/material/core/theming/_all-theme.scss';
-/* NOTE: Theming is currently experimental and not yet publically released! */
+@import '~@angular/material/theming';
 
 @include mat-core();
 

@@ -1,19 +1,22 @@
-FROM node:7.10.0
-RUN useradd --user-group --create-home --shell /bin/false app && npm -g i @angular/cli@latest
-ENV HOME=/home/app
+FROM node:alpine
+ENV HOME=/home/node
+RUN  ["yarn","global","add","@angular/cli@latest"]     
 
-COPY package.json \
+ADD  package.json \
+     yarn.lock \
      .angular-cli.json \
      CHANGELOG.md \
      README.md \
      tsconfig.json \
      tslint.json \
      karma.conf.js $HOME/angular-material-demo/
-     
-COPY src/ $HOME/angular-material-demo/src/
 
-RUN chown -R app:app $HOME/*
+ADD src/ $HOME/angular-material-demo/src
 
-USER app
+RUN chown -R node:node $HOME/*
+
+USER node
 WORKDIR $HOME/angular-material-demo
-RUN npm install
+RUN ["yarn","install"]
+EXPOSE 4200
+ENTRYPOINT ["ng", "serve", "-H", "0.0.0.0"]

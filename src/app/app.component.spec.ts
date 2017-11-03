@@ -5,7 +5,7 @@ import { ComponentFixture, TestBed, async } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { MaterialModule } from '@angular/material';
+import { AppMaterialModule } from './app.material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -22,7 +22,7 @@ describe('AppComponent (template)', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [AppComponent], // declare the test component
-      imports: [MaterialModule, FormsModule, BrowserAnimationsModule]
+      imports: [AppMaterialModule, FormsModule, BrowserAnimationsModule]
     }).compileComponents();
   }));
   // 2nd beforeEach synchronous

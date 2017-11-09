@@ -1,3 +1,6 @@
+## Update 11/09/2107
+- Updated to **Angular 5.0**
+
 ## Update 03/24/2107
 - Updated to **Angular 4.0**
 - Updated to `@angular/cli@1.0.0`

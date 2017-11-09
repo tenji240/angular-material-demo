@@ -10,6 +10,8 @@ import { MatDialog, MatDialogRef, MatSnackBar } from '@angular/material';
 export class AppComponent {
   isDarkTheme = false;
   lastDialogResult: string;
+  mode: string;
+  value: number;
 
   foods: any[] = [
     { name: 'Pizza', rating: 'Excellent' },

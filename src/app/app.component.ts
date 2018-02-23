@@ -87,14 +87,18 @@ export class AppComponent {
 
 @Component({
   template: `
-    <p>This is a dialog</p>
-    <p>
+    <h1 matDialogTitle>This is a dialog</h1>
+    <div matDialogContent>
+      <mat-form-field>
       <label>
         This is a text box inside of a dialog.
-        <input #dialogInput>
+        <input matInput #dialogInput>
       </label>
-    </p>
-    <p> <button md-button (click)="dialogRef.close(dialogInput.value)">CLOSE</button> </p>
+      </mat-form-field>
+    </div>
+    <div matDialogActions>
+      <button mat-raised-button [matDialogClose]="dialogInput.value">CLOSE</button>
+    </div>
   `,
 })
 export class DialogContentComponent {

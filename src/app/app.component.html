@@ -42,10 +42,12 @@
   </mat-sidenav>
 
   <mat-toolbar color="primary">
-    <button mat-button class="app-menu-button" (click)="sidenav.toggle()">
-      <i class="material-icons">menu</i>
-    </button>
-    <span class="title">Angular Material Demo</span>
+    <mat-toolbar-row>
+      <span class="mat-title">Organization Branding - CPB 1.0</span>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="subtitle">
+      <caption class="mat-caption">subtext-setup</caption>
+    </mat-toolbar-row>
   </mat-toolbar>
 
   <div class="app-content">

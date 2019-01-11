@@ -1,4 +1,5 @@
 @import '../../node_modules/@angular/material/theming';
+@import '../assets/variables';
 
 @mixin cbp-component-theme($theme) {
   $primary: map-get($theme, primary);
@@ -22,11 +23,11 @@
     mat-sidenav {
       .mat-list-item {
         &.active {
-          color: mat-color($accent, default-contrast);
-          background-color: mat-color($accent) !important;
+          color: mat-color($primary, default-contrast);
+          background-color: mat-color($primary) !important;
 
           &:hover {
-            background-color: mat-color($accent, darker) !important;
+            background-color: mat-color($primary, darker) !important;
           }
         }
       }
@@ -46,7 +47,17 @@
         }
       }
     }
+
+    mat-toolbar {
+      mat-toolbar-row {
+        &.subtitle {
+          padding: 4px;
+          height: auto;
+        }
+      }
+    }
   }
+
 
   .error-notification-overlay {
     color: mat-color($warn, default-contrast);

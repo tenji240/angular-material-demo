@@ -5,9 +5,8 @@
   color: $text;
 }
 
-@mixin flat_buttons($color, $text) {
+@mixin flat_buttons($color) {
   color: $color;
-
 }
 
 // Raised Buttons

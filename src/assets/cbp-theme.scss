@@ -1,8 +1,18 @@
 @import 'variables';
 
 // on hold, need to define custom color maps for this to work
-$cbp-primary: mat-palette($primary-map, 900, 600, 900);
-$cbp-accent: mat-palette($primary-map, 400, 200, 700);
-$cbp-warning: mat-palette($warning-map, 500, 200, 800);
+$cbp-primary:   mat-palette($primary-map, 900, 600, 900);
+$cbp-accent:    mat-palette($primary-map, 400, 200, 700);
+$cbp-warning:   mat-palette($warning-map, 500, 200, 800);
+$cbp-theme:     mat-light-theme($cbp-primary, $cbp-accent, $cbp-warning);
 
-$cbp-theme: mat-light-theme($cbp-primary, $cbp-accent, $cbp-warning);
+$custom-typography: mat-typography-config(
+  $font-family:   $font-family-base,
+  $headline:      mat-typography-level($font-size-h1, $font-size-h1, $font-weight-base),
+  $title:         mat-typography-level($font-size-h2, $font-size-h2, $font-weight-base),
+  $subheading-1:  mat-typography-level($font-size-h3, $font-size-h3, $font-weight-base),
+  $subheading-2:  mat-typography-level($font-size-h4, $font-size-h4, $font-weight-base),
+  $body-2:        mat-typography-level($font-size-h6, $font-size-h5, $font-weight-base),
+  $body-1:        mat-typography-level($font-size-base, $font-size-large, $font-weight-base),
+  $caption:       mat-typography-level($font-size-small, $font-size-small, $font-weight-base),
+);

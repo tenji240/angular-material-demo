@@ -2,7 +2,7 @@
 
 @import '../node_modules/@angular/material/theming';
 @import 'assets/cbp-theme';
-@include mat-core();
+@include mat-core($custom-typography);
 
 @import 'app/app.component.scss-theme';
 

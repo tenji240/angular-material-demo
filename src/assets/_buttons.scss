@@ -5,6 +5,11 @@
   color: $text;
 }
 
+@mixin flat_buttons($color, $text) {
+  color: $color;
+
+}
+
 // Raised Buttons
 button.mat-raised-button {
   &.cbp-button-success {
@@ -13,10 +18,6 @@ button.mat-raised-button {
   &.cbp-button-danger {
     background: $brand-danger;
     color: $light-primary-text;
-  }
-  &.cbp-button-warning {
-    background: $brand-warning;
-    color: $dark-primary-text;
   }
   &.cbp-button-info {
     background: $brand-info;

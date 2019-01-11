@@ -47,8 +47,9 @@ $font-size-h6:            16px !default; //16px
 $dark-primary-text: $gray-darker;
 $light-primary-text: $white;
 
-// custom map shades to match up with CF Style Guide
-// to generate maps: https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+// Custom map shades to match up with CF Style Guide
+// To generate maps: https://material.io/design/color/the-color-system.html#tools-for-picking-colors
+// TODO: Re-generate A-Maps, since they're based off of incorrect shades.
 
 $primary-map: (
   50:  #e3f0f4,
@@ -162,7 +163,7 @@ $cbp-font-config: mat-typography-config(
   $title:         mat-typography-level($font-size-h2, $font-size-h2, $font-weight-base),
   $subheading-1:  mat-typography-level($font-size-h3, $font-size-h3, $font-weight-base),
   $subheading-2:  mat-typography-level($font-size-h4, $font-size-h4, $font-weight-base),
-  $body-2:        mat-typography-level($font-size-h6, $font-size-h5, $font-weight-base),
+  $body-2:        mat-typography-level($font-size-h5, $font-size-h5, $font-weight-base),
   $body-1:        mat-typography-level($font-size-base, $font-size-large, $font-weight-base),
   $caption:       mat-typography-level($font-size-small, $font-size-small, $font-weight-base),
 );

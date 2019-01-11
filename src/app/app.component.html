@@ -46,7 +46,7 @@
       <span class="cbp-brand">Organization Branding - CPB 1.0</span>
     </mat-toolbar-row>
     <mat-toolbar-row class="subtitle">
-      <caption class="dhs-brand">subtext-setup</caption>
+      <caption class="dhs-brand">Organization Sub Branding</caption>
     </mat-toolbar-row>
   </mat-toolbar>
 
@@ -59,9 +59,10 @@
     </mat-menu>
     <a mat-tab-link>Non-Active Link</a>
     <a mat-tab-link disabled>Disabled Link</a>
-    <mat-tab-group mat-align-tabs="end">
-      <a mat-tab-link label="First">Content 1</a>
-    </mat-tab-group>    
+    <span class="standard-spacer"></span>
+    <a mat-tab-link>
+      <mat-icon>menu</mat-icon>
+    </a>
   </nav>
 
   <div class="app-content">
@@ -71,9 +72,12 @@
       <mat-card-content>
         <h2 class="example-h2">Material Button</h2>
         <button class="app-button" mat-button>FLAT</button>
-        <button class="app-button" mat-raised-button mat-tooltip="This is a tooltip!">RAISED</button>
-        <button class="app-button" mat-raised-button color="primary">PRIMARY RAISED</button>
-        <button class="app-button" mat-raised-button color="accent">ACCENT RAISED</button>
+        <button class="app-button" mat-raised-button mat-tooltip="This is a tooltip!">Raised</button>
+        <button class="app-button" mat-raised-button color="primary">Primary Raised</button>
+        <button class="app-button" mat-raised-button color="accent">Accent Raised</button>
+        <button class="app-button cbp-button-success" mat-raised-button>Success Color</button>
+        <button class="app-button cbp-button-danger" mat-raised-button>Danger Color</button>
+        <button class="app-button cbp-button-warning" mat-raised-button>Warning Color</button>
       </mat-card-content>
     </mat-card>
     <!-- /Material Button -->

@@ -1,0 +1,25 @@
+@import 'variables';
+
+@mixin raised_button($color, $text) {
+  background: $color;
+  color: $text;
+}
+
+// Raised Buttons
+button.mat-raised-button {
+  &.cbp-button-success {
+    @include raised_button($brand-success, $light-primary-text);
+  }
+  &.cbp-button-danger {
+    background: $brand-danger;
+    color: $light-primary-text;
+  }
+  &.cbp-button-warning {
+    background: $brand-warning;
+    color: $dark-primary-text;
+  }
+  &.cbp-button-info {
+    background: $brand-info;
+    color: $light-primary-text;
+  }
+}

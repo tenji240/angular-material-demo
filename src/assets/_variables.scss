@@ -82,6 +82,39 @@ $primary-map: (
   )
 );
 
+$success-map: (
+  50: #e7f6e6,
+  100: #c6e7c1,
+  200: #a0d899,
+  300: #78c96f,
+  400: #58be4e,
+  500: #35b228,
+  600: #2aa31f,
+  700: #199111,
+  800: $brand-success,
+  900: #006100,
+  A100: $brand-success-subtle,
+  A200: lighten($brand-success, 15%),
+  A400: $brand-success,
+  A700: darken($brand-success, 15%),
+  contrast: (
+    50: $dark-primary-text,
+    100: $dark-primary-text,
+    200: $dark-primary-text,
+    300: $light-primary-text,
+    400: $light-primary-text,
+    500: $light-primary-text,
+    600: $light-primary-text,
+    700: $light-primary-text,
+    800: $light-primary-text,
+    900: $light-primary-text,
+    A100: $dark-primary-text,
+    A200: $light-primary-text,
+    A400: $light-primary-text,
+    A700: $light-primary-text,
+  )
+);
+
 $warning-map: (
   50:  #fdf3e0,
   100: #fadfb3,

@@ -9,8 +9,8 @@
     mat-toolbar {
       button {
         &.active {
-          color: mat-color($accent, default-contrast);
-          background-color: mat-color($accent);
+          color: mat-color($primary, default-contrast);
+          background-color: mat-color($primary);
         }
       }
 
@@ -41,7 +41,7 @@
         a {
           color: mat-color($primary, lighter);
           &:hover {
-            color: mat-color($accent);
+            color: mat-color($primary);
           }
         }
       }
@@ -54,8 +54,8 @@
   }
 
   .info-notification-overlay {
-    color: mat-color($accent, default-contrast);
-    background-color: mat-color($accent);
+    color: mat-color($primary, default-contrast);
+    background-color: mat-color($primary);
   }
 
   .success-notification-overlay {

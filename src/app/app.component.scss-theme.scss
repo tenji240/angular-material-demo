@@ -1,6 +1,10 @@
 @import '../../node_modules/@angular/material/theming';
 @import '../assets/variables';
 
+@function fontSizeMe($size) {
+  @return mat-font-size($cbp-font-config, $size);
+}
+
 @mixin cbp-component-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
@@ -44,15 +48,6 @@
           &:hover {
             color: mat-color($primary);
           }
-        }
-      }
-    }
-
-    mat-toolbar {
-      mat-toolbar-row {
-        &.subtitle {
-          padding: 4px;
-          height: auto;
         }
       }
     }

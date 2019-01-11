@@ -1,3 +1,22 @@
+@import '../../node_modules/@angular/material/theming';
+@import '../assets/variables';
+
+@function fontSizeMe($size) {
+  @return mat-font-size($cbp-font-config, $size);
+}
+
+mat-toolbar-row {
+  height: auto;
+  .cbp-brand {
+    font-size: fontSizeMe(body-2);
+  }
+  .dhs-brand {
+    font-size: fontSizeMe(caption);
+    margin: 3px 0 0;
+    font-style: italic;
+  }
+}
+
 mat-sidenav-container.m2app-dark {
   background: black;
 }

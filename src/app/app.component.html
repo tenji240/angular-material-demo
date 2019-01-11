@@ -43,12 +43,26 @@
 
   <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <span class="mat-title">Organization Branding - CPB 1.0</span>
+      <span class="cbp-brand">Organization Branding - CPB 1.0</span>
     </mat-toolbar-row>
     <mat-toolbar-row class="subtitle">
-      <caption class="mat-caption">subtext-setup</caption>
+      <caption class="dhs-brand">subtext-setup</caption>
     </mat-toolbar-row>
   </mat-toolbar>
+
+  <nav mat-tab-nav-bar>
+    <a mat-tab-link [active]=true >Active Link</a>
+    <a mat-tab-link [matMenuTriggerFor]="menu">Menu</a>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>Item 1</button>
+      <button mat-menu-item>Item 2</button>
+    </mat-menu>
+    <a mat-tab-link>Non-Active Link</a>
+    <a mat-tab-link disabled>Disabled Link</a>
+    <mat-tab-group mat-align-tabs="end">
+      <a mat-tab-link label="First">Content 1</a>
+    </mat-tab-group>    
+  </nav>
 
   <div class="app-content">
 

@@ -27,9 +27,9 @@ $brand-warning-subtle: #fef7ed;
 $brand-danger-subtle:  #f8ecec;
 
 // Fonts
-$font-family-sans-serif:  Roboto, Calibri, Tahoma, Arial, sans-serif;
-$font-family-serif:       Georgia, 'Times New Roman', Times, serif;
-$font-family-mono:        Menlo, Monaco, Consolas, 'Courier New', monospace;
+$font-family-sans-serif:  'Roboto', 'Calibri', 'Tahoma', 'Arial', 'sans-serif';
+$font-family-serif:       'Georgia', 'Times New Roman', 'Times', 'serif';
+$font-family-mono:        'Menlo', 'Monaco', 'Consolas', 'Courier New', 'monospace';
 $font-family-base:        $font-family-sans-serif;
 $font-weight-base:        400;
 
@@ -156,7 +156,7 @@ $cbp-accent:    mat-palette($primary-map, 400, 200, 700);
 $cbp-warning:   mat-palette($warning-map, 500, 200, 800);
 $cbp-theme:     mat-light-theme($cbp-primary, $cbp-accent, $cbp-warning);
 
-$custom-typography: mat-typography-config(
+$cbp-font-config: mat-typography-config(
   $font-family:   $font-family-base,
   $headline:      mat-typography-level($font-size-h1, $font-size-h1, $font-weight-base),
   $title:         mat-typography-level($font-size-h2, $font-size-h2, $font-weight-base),

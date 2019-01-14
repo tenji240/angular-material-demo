@@ -4,8 +4,9 @@
 @import 'assets/cbp-theme';
 @include mat-core($cbp-font-config);
 
-@import 'app/app.component.scss-theme';
-
 .default-theme {
   @include angular-material-theme($cbp-theme);
 }
+
+@import 'app/app.component.scss-theme';
+

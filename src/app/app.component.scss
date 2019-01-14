@@ -126,3 +126,15 @@ mat-chip {
   flex: 1 1 auto;
 }
 
+.default-theme .mat-form-field.mat-focused .mat-form-field-label {
+  color: red;
+}
+
+// specific overrides
+
+.required {
+  color: red !important;
+  &::after {
+    content: " (Required)";
+  }
+}

@@ -131,16 +131,18 @@
     <mat-card class="app-input-section">
       <mat-card-content>
         <h2 class="example-h2">Material Input</h2>
-        <mat-form-field>
-          <input matInput placeholder="First name" />
-        </mat-form-field>
-        <mat-form-field>
+        <mat-form-field appearance="fill" required>
+            <mat-label class="required">Fill form field</mat-label>
+            <input matInput placeholder="Placeholder">
+            <mat-hint>Hint</mat-hint>
+          </mat-form-field>
+        <mat-form-field appearance="standard">
           <input matInput #nickname placeholder="Nickname" maxlength="50" />
           <mat-hint align="end">
             {{nickname.value.length}} / 50
           </mat-hint>
         </mat-form-field>
-        <mat-form-field>
+        <mat-form-field color="warn">
           <mat-icon matPrefix class="app-input-icon">android</mat-icon>
           <input matInput placeholder="Favorite phone">
         </mat-form-field>
@@ -189,15 +191,15 @@
       <mat-card-content>
         <h2>Material Stepper</h2>
         <mat-horizontal-stepper>
-          <mat-step label="Step 1">
-            Content 1
-          </mat-step>
-          <mat-step label="Step 2">
-            Content 2
-          </mat-step>
-          <mat-step label="Step 3">
-            Content 3
-          </mat-step>
+          
+          <ng-template matStepperIcon="edit">
+            <mat-icon>airport_shuttle</mat-icon>
+          </ng-template>
+
+          <mat-step label="Application Information"></mat-step>
+          <mat-step label="Mark Information"></mat-step>
+          <mat-step label="Goods and Services"></mat-step>
+
         </mat-horizontal-stepper>
       </mat-card-content>
     </mat-card>

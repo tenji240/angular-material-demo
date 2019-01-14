@@ -1,7 +1,14 @@
 // CF Theme Forms/Inputs
 
-.mat-form-field input {
-  &:hover {
-    background-color: $brand-primary-subtle;
+mat-form-field {
+  .mat-form-field-label[required] {
+    color: red;
+  }
+}
+
+mat-label .required {
+  color: red !important;
+  &::after {
+    content: "(required)"
   }
 }

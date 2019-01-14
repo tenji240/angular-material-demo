@@ -133,8 +133,8 @@ mat-chip {
 // specific overrides
 
 .required {
-  color: red !important;
   &::after {
     content: " (Required)";
+    color: red !important;
   }
 }

@@ -1,0 +1,25 @@
+// CF Theme Chips/Tags
+
+@mixin chip($bg-color, $txt-color) {
+  background: $bg-color;
+  color: $txt-color;
+}
+
+.mat-chip {
+  font-size: $font-size-small; //TODO: Have this be handled by font-config
+  font-weight: $font-weight-base;
+
+  &.cbp-label-success {
+    @include chip($brand-success, $light-primary-text);
+  }
+  &.cbp-label-info {
+    @include chip($brand-info, $light-primary-text);
+  }
+  &.cbp-label-danger {
+    @include chip($brand-danger, $light-primary-text);
+  }
+}
+
+.mat-radio-button {
+  margin: 0px 10px;
+}

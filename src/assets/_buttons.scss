@@ -1,8 +1,8 @@
-@import 'variables';
+// CF Theme Buttons
 
-@mixin raised_button($color, $text) {
-  background: $color;
-  color: $text;
+@mixin raised_button($bg-color, $txt-color) {
+  background: $bg-color;
+  color: $txt-color;
 }
 
 @mixin flat_buttons($color) {
@@ -23,3 +23,4 @@ button.mat-raised-button {
     color: $light-primary-text;
   }
 }
+

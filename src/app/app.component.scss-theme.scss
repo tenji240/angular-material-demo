@@ -3,7 +3,7 @@
   $accent: map-get($theme, accent);
   $warn: map-get($theme, warn);
 
-  mat-sidenav-container {
+  mat-sidenav-container { // note: custom to the current build
     mat-toolbar {
       button {
         &.active {

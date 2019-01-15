@@ -15,6 +15,6 @@ body {
 .default-theme {
   @include angular-material-theme($cbp-theme);
   @import 'assets/cbp-theme.scss';
-  @import 'app/app.component.scss-theme';
+  @import 'assets/components';
   @include cbp-component-theme($cbp-theme);
 }

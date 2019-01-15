@@ -5,8 +5,18 @@
   color: $txt-color;
 }
 
-@mixin flat_buttons($color) {
-  color: $color;
+@mixin basic_button($bg-color, $txt-color) {
+  color: $txt-color;
+  &:hover {
+    background-color: $bg-color;
+  }
+}
+
+@mixin stroked_button($txt-color, $bg-color) {
+  color: $txt-color;
+  &:hover {
+    background-color: lighten($color: $bg-color, $amount: 10%);
+  }
 }
 
 @function fontSizeMe($size) {

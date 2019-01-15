@@ -68,18 +68,51 @@
   <div class="app-content">
 
     <!-- Material Button -->
+    <!-- Also a simple test of the grid system -->
+    <!-- TODO: Check Responsivenss -->
     <mat-card>
-      <mat-card-content>
-        <h2 class="example-h2">Material Button</h2>
-        <button class="app-button" mat-button>FLAT</button>
-        <button class="app-button" mat-raised-button mat-tooltip="This is a tooltip!">Raised</button>
-        <button class="app-button" mat-raised-button color="primary">Primary Raised</button>
-        <button class="app-button" mat-raised-button color="accent">Accent Raised</button>
-        <button class="app-button" mat-raised-button color="warn">Warning Color</button>
-        <button class="app-button cbp-button-success" mat-raised-button>Success Color</button>
-        <button class="app-button cbp-button-danger" mat-raised-button>Danger Color</button>
-      </mat-card-content>
-    </mat-card>
+        <mat-card-content>
+            <h2 class="example-h2">Material Button</h2>
+          <mat-grid-list cols='1' rowHeight="5em">
+            <mat-grid-tile>
+                <button class="app-button" mat-button>Basic</button>
+                <button class="app-button" mat-button color="primary">Primary</button>
+                <button class="app-button" mat-button color="accent">Accent</button>
+                <button class="app-button" mat-button color="warn">Warning</button>
+                <button class="app-button cbp-button-success" mat-button>Success</button>
+                <button class="app-button cbp-button-danger" mat-button>Danger</button>
+                <button class="app-button cbp-button-info" mat-button>Infor</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button class="app-button" mat-raised-button mat-tooltip="This is a tooltip!">Raised</button>
+                <button class="app-button" mat-raised-button color="primary">Primary Raised</button>
+                <button class="app-button" mat-raised-button color="accent">Accent Raised</button>
+                <button class="app-button" mat-raised-button color="warn">Warning Raised</button>
+                <button class="app-button cbp-button-success" mat-raised-button>Success Raised</button>
+                <button class="app-button cbp-button-danger" mat-raised-button>Danger Raised</button>
+                <button class="app-button cbp-button-info" mat-raised-button>Info Raised</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button class="app-button" mat-stroked-button mat-tooltip="This is a tooltip!">Stroked</button>
+                <button class="app-button" mat-stroked-button color="primary">Primary Stroked</button>
+                <button class="app-button" mat-stroked-button color="accent">Accent Stroked</button>
+                <button class="app-button" mat-stroked-button color="warn">Warning Stroked</button>
+                <button class="app-button cbp-button-success" mat-stroked-button>Success Stroked</button>
+                <button class="app-button cbp-button-danger" mat-stroked-button>Danger Stroked</button>
+                <button class="app-button cbp-button-info" mat-stroked-button>Info Stroked</button>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <button class="app-button" mat-flat-button mat-tooltip="This is a tooltip!">Flat</button>
+                <button class="app-button" mat-flat-button color="primary">Primary Flat</button>
+                <button class="app-button" mat-flat-button color="accent">Accent Flat</button>
+                <button class="app-button" mat-flat-button color="warn">Warning Flat</button>
+                <button class="app-button cbp-button-success" mat-flat-button>Success Flat</button>
+                <button class="app-button cbp-button-danger" mat-flat-button>Danger Flat</button>
+                <button class="app-button cbp-button-info" mat-flat-button>Info Flat</button>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card-content>
+      </mat-card>
     <!-- /Material Button -->
 
     <!-- Material Chip List -->

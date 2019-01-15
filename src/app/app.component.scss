@@ -2,7 +2,6 @@
 @import '../assets/variables';
 @import '../assets/buttons';
 @import '../assets/chips';
-@import '../assets/forms';
 
 @function fontSizeMe($size) {
   @return mat-font-size($cbp-font-config, $size);
@@ -126,15 +125,11 @@ mat-chip {
   flex: 1 1 auto;
 }
 
-.default-theme .mat-form-field.mat-focused .mat-form-field-label {
-  color: red;
-}
-
 // specific overrides
 
 .required {
   &::after {
-    content: " (Required)";
-    color: red !important;
+    content: " (required)";
+    color: $brand-danger !important;
   }
 }

@@ -1,14 +1,3 @@
-// CF Theme Buttons
-
-@mixin raised_button($bg-color, $txt-color) {
-  background: $bg-color;
-  color: $txt-color;
-}
-
-@mixin flat_buttons($color) {
-  color: $color;
-}
-
 // Raised Buttons
 button.mat-raised-button {
   &.cbp-button-success {

@@ -1,9 +1,3 @@
-// CF Theme Chips/Tags
-
-@mixin chip($bg-color, $txt-color) {
-  background: $bg-color;
-  color: $txt-color;
-}
 
 .mat-chip {
   font-size: $font-size-small; //TODO: Have this be handled by font-config

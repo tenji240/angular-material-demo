@@ -1,0 +1,26 @@
+// CBP CF Defined Toolbar
+mat-toolbar-row {
+  height: auto;
+  padding: 5px 70px 5px 17px;
+  &.subtitle {
+    padding: 0px 70px 0px 17px;
+  }
+  .cbpBrand {
+    display: block;
+    font-size: fontSizeMe(body-2);
+    line-height: 20px;
+  }
+  .cbpSubBrand {
+    font-size: fontSizeMe(caption);
+    margin: 3px 0 0;
+    font-style: italic;
+    display: block;
+  }
+}  
+
+.required {
+  &::after {
+    content: " (required)";
+    color: $brand-danger !important;
+  }
+}

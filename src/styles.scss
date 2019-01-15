@@ -1,12 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import '../node_modules/@angular/material/theming';
-@import 'assets/cbp-theme';
+@import 'assets/variables';
+@import 'assets/mixins';
+
+// set up the base theme declaration
 @include mat-core($cbp-font-config);
+
+// TODO: Fix this weird override
+body {
+  margin: auto;
+}
 
 .default-theme {
   @include angular-material-theme($cbp-theme);
+  @import 'assets/cbp-theme.scss';
+  @import 'app/app.component.scss-theme';
 }
-
-@import 'app/app.component.scss-theme';
-

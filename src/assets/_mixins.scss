@@ -1,0 +1,19 @@
+// custom mixins for styles
+
+@mixin raised_button($bg-color, $txt-color) {
+  background-color: $bg-color;
+  color: $txt-color;
+}
+
+@mixin flat_buttons($color) {
+  color: $color;
+}
+
+@function fontSizeMe($size) {
+  @return mat-font-size($cbp-font-config, $size);
+}
+
+@mixin chip($bg-color, $txt-color) {
+  background-color: $bg-color;
+  color: $txt-color;
+}

@@ -43,10 +43,12 @@
 
   <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <span class="cbpBrand">Organization Branding - CPB 1.0</span>
-    </mat-toolbar-row>
-    <mat-toolbar-row class="subtitle">
+      <div> <!-- TODO: Clean this up -->
+        <span class="cbpBrand">Organization Branding - CPB 1.0</span>
       <caption class="cbpSubBrand">Organization Sub Branding</caption>
+      </div>
+      <span class="standard-spacer"></span>
+      <mat-icon>menu</mat-icon>
     </mat-toolbar-row>
   </mat-toolbar>
 
@@ -69,7 +71,7 @@
 
     <!-- Material Button -->
     <!-- Also a simple test of the grid system -->
-    <!-- TODO: Check Responsivenss -->
+    <!-- TODO: Check Responsiveness -->
     <mat-card>
         <mat-card-content>
             <h2 class="example-h2">Material Button</h2>

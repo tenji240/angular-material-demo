@@ -1,5 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
-
+// First, import themeing too, variables, and mixins
 @import '../node_modules/@angular/material/theming';
 @import 'assets/variables';
 @import 'assets/mixins';
@@ -12,9 +11,10 @@ body {
   margin: auto;
 }
 
+// set up the theme to reside under the default theme class
+// TODO: change name to CF-Theme
 .default-theme {
   @include angular-material-theme($cbp-theme);
   @import 'assets/cbp-theme.scss';
-  @import 'assets/components';
   @include cbp-component-theme($cbp-theme);
 }

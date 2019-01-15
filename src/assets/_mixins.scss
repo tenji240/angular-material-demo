@@ -1,5 +1,10 @@
-// custom mixins for styles
+// FUNCTIONS
 
+@function getFontSize($size) {
+  @return mat-font-size($cbp-font-config, $size);
+}
+
+// MIXINS
 @mixin raised_button($bg-color, $txt-color) {
   background-color: $bg-color;
   color: $txt-color;
@@ -17,10 +22,6 @@
   &:hover {
     background-color: lighten($color: $bg-color, $amount: 10%);
   }
-}
-
-@function fontSizeMe($size) {
-  @return mat-font-size($cbp-font-config, $size);
 }
 
 @mixin chip($bg-color, $txt-color) {

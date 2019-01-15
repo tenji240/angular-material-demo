@@ -41,11 +41,11 @@
     }
     .cbpBrand {
       display: block;
-      font-size: fontSizeMe(body-2);
+      font-size: getFontSize(body-2);
       line-height: 20px;
     }
     .cbpSubBrand {
-      font-size: fontSizeMe(caption);
+      font-size: getFontSize(caption);
       margin: 3px 0 0;
       font-style: italic;
       display: block;

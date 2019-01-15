@@ -90,3 +90,12 @@ mat-chip {
 .example-spacer {
   flex: 1 1 auto;
 }
+
+//custom navigation css
+.username {
+  span, mat-icon {
+    display: inline-block;
+    margin: auto 2px;
+    font-weight: 200;
+  }
+}

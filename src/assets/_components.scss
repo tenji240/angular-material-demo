@@ -33,20 +33,26 @@
     }
   }
 
+  mat-icon {
+    margin: 0 0.2em;
+  }
+
   mat-toolbar-row {
     height: auto;
-    padding: 5px 70px 5px 17px;
+    padding: 5px 60px 5px 17px;
     &.subtitle {
       padding: 0px 70px 0px 17px;
     }
     .cbpBrand {
+      margin-top: 5px;
       display: block;
       font-size: getFontSize(body-2);
       line-height: 20px;
     }
     .cbpSubBrand {
+      margin: 0;
       font-size: getFontSize(caption);
-      margin: 3px 0 0;
+      font-weight: 200;
       font-style: italic;
       display: block;
     }

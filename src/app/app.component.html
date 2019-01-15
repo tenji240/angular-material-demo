@@ -41,29 +41,38 @@
     </mat-toolbar>
   </mat-sidenav>
 
+  <!-- Now replicates the navigation previously found-->
   <mat-toolbar color="primary">
     <mat-toolbar-row>
-      <div> <!-- TODO: Clean this up -->
-        <span class="cbpBrand">Organization Branding - CPB 1.0</span>
-      <caption class="cbpSubBrand">Organization Sub Branding</caption>
+      <div>
+        <span class="cbpBrand">U.S. Customs &amp; Border Protection's Manifest Trade Portal</span>
+        <span class="cbpSubBrand">U.S. Department of Homeland Security</span>
       </div>
       <span class="standard-spacer"></span>
-      <mat-icon>menu</mat-icon>
+      <a mat-icon-button href="#">
+        <mat-icon matBadge="2" matBadgeColor="warn" matBadgeOverlap="false">notifications_none</mat-icon>
+      </a>
+      <a mat-button href="#" class="username">
+        <span class="cbpBrand">John Doe</span>
+        <mat-icon>account_circle</mat-icon>
+      </a>
+      <a mat-icon-button href="#">
+        <mat-icon>exit_to_app</mat-icon>
+      </a>
     </mat-toolbar-row>
   </mat-toolbar>
 
   <nav mat-tab-nav-bar>
-    <a mat-tab-link [active]=true >Active Link</a>
-    <a mat-tab-link [matMenuTriggerFor]="menuA">Menu</a>
-    <mat-menu #menuA="matMenu">
-      <a href="https://google.com/" mat-menu-item target="_blank">Item 1</a>
-      <button mat-menu-item>Item 2</button>
+    <a mat-tab-link [active]=true >Dashboard</a>
+    <a mat-tab-link [matMenuTriggerFor]="manifest">Manifests</a>
+    <mat-menu #manifest="matMenu">
+      <a href="https://google.com/" mat-menu-item target="_blank">Create a new Manifest</a>
+      <button mat-menu-item>Create Manifest from Template</button>
     </mat-menu>
-    <a mat-tab-link>Non-Active Link</a>
-    <a mat-tab-link disabled>Disabled Link</a>
+    <a mat-tab-link>Bills of Lading</a>
     <span class="standard-spacer"></span>
     <a mat-tab-link>
-      <mat-icon>menu</mat-icon>
+      <mat-icon>more_vert</mat-icon>
     </a>
   </nav>
 
